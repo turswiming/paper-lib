@@ -2,6 +2,13 @@ comments:
 
 对于当前project来说，类似infoNCE是否可以用来设计一个新的mask训练方法？
 
+ #### **（2）基于区域的对比学习（Region-based Contrastive Learning）**
+- **方法**：  
+  对候选区域（如Mask proposals或RoI）进行对比学习，区分不同实例的RoI特征。
+- **示例模型**：  
+  - **MaskContrast**（ECCV 2022）：将对比学习与Mask R-CNN结合，通过对比损失优化Mask特征。  
+  - **SOLO v2**（NeurIPS 2020）：通过对比学习增强实例感知的特征表示。
+
 GAN领域有非常多处理两个模型相互协调的工作，包括两个模型优化速度不同，一个欠优化一个过优化，接下来阅读这些文献可能有助于解决现有训练中的问题
 
 
